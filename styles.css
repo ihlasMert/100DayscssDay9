@@ -1,86 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
+
 .frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 6px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background-color: blue;
-  color: wheat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 6px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #4cb6de;
+	color: #fff;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Montserrat Alternates";
 }
+
 .center {
-  width: 100%;
-  height: 100%;
-  padding: 95px 30px 30px 30px;
-  /*  text-align: center; */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	padding: 95px 30px 30px 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
+
 p {
-  font-size: 1.35rem;
-  font-weight: 500;
-  line-height: 1.5;
-  position: relative;
+	font-size: 1.35rem;
+	font-weight: 500;
+	line-height: 1.5;
+	position: relative;
 }
+
 p::before {
-  content: "„";
-  position: absolute;
-  z-index: -100;
-  font-size: 14rem;
-  color: #ffffff33;
-  bottom: 55%;
-  left: -7%;
+	content: "„";
+	position: absolute;
+	z-index: -100;
+	font-size: 14rem;
+	color: #ffffff33;
+	bottom: 55%;
+	left: -7%;
 }
+
 cite {
-  position: relative;
-  top: 30px;
-  font-size: 1.2;
-  font-weight: 400;
+	position: relative;
+	top: 30px;
+	font-size: 1.2rem;
+	font-weight: 300;
 }
+
 span {
-  background: #286f8a;
-  padding: 3px 8px;
-  cursor: pointer;
+	background: #286f8a;
+	padding: 3px 8px;
+	cursor: pointer;
+	position: relative;
 }
+
 span::before {
-  content: "ABC";
-  position: absolute;
-  background: wheat;
-  opacity: 0;
-  color: #335566;
-  font-size: 16px;
-  left: -87px;
-  top: -160px;
-  padding: 8px 200px 8px 20px;
-  z-index: -10;
-  transition: all 0.6s ease-in-out;
-  cursor: default;
-  pointer-events: none;
+	content: "[əbˈseʃ(ə)n]";
+	position: absolute;
+	background: white;
+	opacity: 0;
+	color: #335566;
+	font-size: 16px;
+	left: -87px;
+	top: -160px;
+	padding: 8px 200px 8px 20px;
+	z-index: -10;
+	transition: all 0.6s ease-in-out;
+	cursor: default;
+	pointer-events: none;
 }
-span:hover::before{
-    top: 146px;
-    opacity: 1;
-    z-index: 10;
-    left: 10px;
+
+span:hover::before {
+	top: -146px;
+	opacity: 1;
+	z-index: 10;
 }
-span::after{
-    content: "HER KES KENDİ HAYATINI KURTARMAK ZORUNDA";
-    position: absolute;
-    background: #286f8a;
+
+span::after {
+	content: "Obsession, a persistent disturbing preoccupation with an often unreasonable idea or feeling.";
+	position: absolute;
+	background: #286f8a;
 	opacity: 0;
 	width: 307.8px;
 	left: -87px;
@@ -92,8 +105,9 @@ span::after{
 	cursor: pointer;
 	pointer-events: none;
 }
-/* span:hover::after {
+
+span:hover::after {
 	top: -106px;
 	opacity: 1;
 	z-index: 10;
-} */
+}
